@@ -10,12 +10,14 @@ import { CreatUser } from '../../models/creat-user';
 export class CreateComponent implements OnInit {
   resultData!: CreatUser;
 
+  isSubmitted: boolean = false;
+
   setValue: CreatUser = {
-    name: 'Akramjon',
-    email: 'akramjon47@calachnikov.ru',
-    password: 'sadsad',
-    login: 'Admin11',
-    role: 'Student',
+    name: '',
+    email: '',
+    password: '',
+    login: '',
+    role: '',
   };
 
   constructor(private crudService: CrudService) {}
@@ -29,6 +31,7 @@ export class CreateComponent implements OnInit {
       next: (result) => {
         this.resultData = result;
         console.log(result);
+        this.isSubmitted = true;
       },
       error: (err) => {
         console.log(`Error ketti: ${err}`);

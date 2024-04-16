@@ -8,6 +8,7 @@ import { GetallComponent } from './components/getall/getall.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
+
 import {MatTableModule} from '@angular/material/table';
 @NgModule({
   declarations: [

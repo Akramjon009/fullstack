@@ -10,6 +10,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GetAllWithNgbootstarapComponent } from './component/get-all-with-ngbootstarap/get-all-with-ngbootstarap.component';
 import { GetAllWithAngularMaterialComponent } from './component/get-all-with-angular-material/get-all-with-angular-material.component';
 import { CreateComponent } from './component/create/create.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { CreateComponent } from './component/create/create.component';
     HttpClientModule,
     NgbModule,
     RouterLink,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
