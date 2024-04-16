@@ -9,6 +9,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GetAllWithNgbootstarapComponent } from './component/get-all-with-ngbootstarap/get-all-with-ngbootstarap.component';
 import { GetAllWithAngularMaterialComponent } from './component/get-all-with-angular-material/get-all-with-angular-material.component';
+import { CreateComponent } from './component/create/create.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { GetAllWithAngularMaterialComponent } from './component/get-all-with-ang
     NavbarComponent,
     GetAllWithNgbootstarapComponent,
     GetAllWithAngularMaterialComponent,
+    CreateComponent,
   ],
   imports: [
     BrowserModule,

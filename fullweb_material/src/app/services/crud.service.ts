@@ -4,14 +4,13 @@ import { Observable } from 'rxjs';
 import { UserModel } from '../models/user-model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CrudService {
+  baseUrl: string = 'https://localhost:7226/api/Users';
+  constructor(private http: HttpClient) {}
 
-  baseUrl: string = "http://localhost:5025/api/User/GetAll";
-  constructor(private http:HttpClient) { }
-
-  getAll(): Observable<UserModel[]>{
-    return this.http.get<UserModel[]>(this.baseUrl)
+  getAll(): Observable<UserModel[]> {
+    return this.http.get<UserModel[]>(this.baseUrl);
   }
 }
