@@ -11,6 +11,9 @@ import { GetAllWithNgbootstarapComponent } from './component/get-all-with-ngboot
 import { GetAllWithAngularMaterialComponent } from './component/get-all-with-angular-material/get-all-with-angular-material.component';
 import { CreateComponent } from './component/create/create.component';
 import { FormsModule } from '@angular/forms';
+import { UpdateComponent } from './component/update/update.component';
+import { GetByIdComponent } from './component/get-by-id/get-by-id.component';
+import { DeleteComponent } from './component/delete/delete.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { FormsModule } from '@angular/forms';
     GetAllWithNgbootstarapComponent,
     GetAllWithAngularMaterialComponent,
     CreateComponent,
+    UpdateComponent,
+    GetByIdComponent,
+    DeleteComponent,
   ],
   imports: [
     BrowserModule,
