@@ -6,6 +6,7 @@ import { GetAllWithNgbootstarapComponent } from './component/get-all-with-ngboot
 import { CreateComponent } from './component/create/create.component';
 import { GetByIdComponent } from './component/get-by-id/get-by-id.component';
 import { UpdateComponent } from './component/update/update.component';
+import { DeleteComponent } from './component/delete/delete.component';
 
 const routes: Routes = [
   { path: 'Bootstrap', component: GetAllComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'Create', component: CreateComponent },
   { path: 'GetById', component: GetByIdComponent },
   { path: 'Update', component: UpdateComponent },
+  { path: 'Delete', component: DeleteComponent },
 ];
 
 @NgModule({
